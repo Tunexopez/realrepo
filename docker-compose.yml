@@ -33,9 +33,9 @@ services:
   seed:
     build: ./seed-data
     profiles: ["seed"]
-    depends_on:
-      vote:
-        condition: service_healthy 
+    # depends_on:
+    # vote:
+    #    condition: service_healthy 
     networks:
       - front-tier
     restart: "no"
